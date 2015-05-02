@@ -18,3 +18,7 @@ For all Bower commands:
 To reset installed Bower components (from project root):
 
     :Breset
+
+## Licence
+
+Copyright © 2015 Ain Tohvri. Licenced under [GPLv3](LICENSE).
