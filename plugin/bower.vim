@@ -1,3 +1,8 @@
+if (exists('g:loaded_bower') && g:loaded_bower) || v:version < 700 || &cp
+  finish
+endif
+let g:loaded_bower = 1
+
 function! s:Bower(bang, args)
   let cmd = 'bower ' . a:args
   execute ':!' . cmd
