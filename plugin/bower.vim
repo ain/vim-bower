@@ -4,7 +4,7 @@ endif
 let g:loaded_bower = 1
 
 " Syntax highlighting for bower-rails descriptor
-au BufRead,BufNewFile Bowerfile setfiletype ruby
+au BufRead,BufNewFile Bowerfile set filetype=ruby
 
 function! s:Bower(bang, args)
   let cmd = 'bower ' . a:args
