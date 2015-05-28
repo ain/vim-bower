@@ -3,6 +3,9 @@ if (exists('g:loaded_bower') && g:loaded_bower) || v:version < 700 || &cp
 endif
 let g:loaded_bower = 1
 
+" Syntax highlighting for bower-rails descriptor
+au BufRead,BufNewFile Bowerfile setfiletype ruby
+
 function! s:Bower(bang, args)
   let cmd = 'bower ' . a:args
   execute ':!' . cmd
